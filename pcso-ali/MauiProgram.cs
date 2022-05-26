@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Markup;
+using pcso_ali.ViewModel;
 
 namespace pcso_ali;
 
@@ -20,6 +21,8 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+
+			builder.Services.AddSingleton<LoginViewModel>();
 
 		return builder.Build();
 	}

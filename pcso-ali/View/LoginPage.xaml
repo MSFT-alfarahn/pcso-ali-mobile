@@ -4,8 +4,23 @@
              x:Class="pcso_ali.View.LoginPage"
              Title="LoginPage">
     <StackLayout>
-        <Label Text="Welcome to .NET MAUI!"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+        <Label 
+            FontSize="40"
+            Text="Login"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry
+            Margin="20,20,20,0"
+            FontSize="30"
+            Placeholder="Type user"/>
+        <Entry
+            Margin="20,5,20,20"
+            FontSize="30"
+            Placeholder="Type password"
+            IsPassword="true"/>
+        <Button
+            Margin="20,0,20,20"
+            Text="Submit"
+            FontSize="30"/>
     </StackLayout>
 </ContentPage>
