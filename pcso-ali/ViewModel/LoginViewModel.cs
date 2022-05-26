@@ -1,6 +1,10 @@
 ﻿
+using CommunityToolkit.Mvvm.ComponentModel;
+
 namespace pcso_ali.ViewModel;
 
-public class LoginViewModel : BaseViewModel
+public partial class LoginViewModel : BaseViewModel
 {
+    [ObservableProperty]
+    private string username;
 }

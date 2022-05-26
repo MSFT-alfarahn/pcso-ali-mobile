@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Markup;
+using pcso_ali.View;
 using pcso_ali.ViewModel;
 
 namespace pcso_ali;
@@ -23,6 +24,7 @@ public static class MauiProgram
 			});
 
 			builder.Services.AddSingleton<LoginViewModel>();
+			builder.Services.AddSingleton<LoginPage>();
 
 		return builder.Build();
 	}
