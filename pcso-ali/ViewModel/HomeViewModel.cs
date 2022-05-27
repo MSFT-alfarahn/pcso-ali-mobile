@@ -1,6 +1,6 @@
 ﻿
 namespace pcso_ali.ViewModel;
 
-public class HomeViewModel : BaseViewModel
+public partial class HomeViewModel : BaseViewModel
 {
 }
